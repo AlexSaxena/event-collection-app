@@ -1,1 +1,1 @@
-# Store App
+# Event Collection App
