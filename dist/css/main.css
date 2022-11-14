@@ -50,6 +50,50 @@ h6 {
   isolation: isolate;
 }
 
-h1 {
-  color: orangered;
+header {
+  min-height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid blue 1px;
+}
+header h1 {
+  text-decoration: underline;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 93%;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  width: 20%;
+  height: 100%;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  list-style-type: none;
+  border: solid black 1px;
+}
+nav ul li a {
+  color: black;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  border: solid orange 1px;
+}
+main .hero-banner {
+  height: 30%;
+  width: 100%;
+  border: solid green 1px;
 }/*# sourceMappingURL=main.css.map */
