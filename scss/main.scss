@@ -1,6 +1,8 @@
 // SCSS
 @import "./resets";
-
+body {
+  min-height: 100%;
+}
 header {
   min-height: 7%;
   display: flex;
@@ -41,7 +43,7 @@ header {
 }
 
 main {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   border: solid orange 1px;
 
@@ -55,10 +57,74 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     .grid-items {
-      border: solid red 1px;
+      // border: solid red 1px;
     }
   }
 }
 .landing-aside {
   width: 20%;
+}
+
+// Landing Page Cards
+
+.toggle {
+  cursor: pointer;
+}
+
+.grid-card {
+  max-width: 100%;
+  height: auto;
+  border: solid black 1px;
+  border-radius: 0.3rem;
+
+  .image-big {
+    width: 100%;
+  }
+
+  .expandable_content.active {
+    max-height: 160px;
+  }
+
+  .expandable_content {
+    max-height: 0;
+    // overflow: hidden;
+    overflow-y: scroll;
+    transition: max-height 0.2s;
+  }
+
+  .card-header {
+    padding: 1rem;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+
+    .card-inner-content {
+      width: auto;
+
+      .card-header-title {
+        font-weight: bold;
+        color: #252525;
+      }
+
+      .tags {
+        color: #969696;
+        font-size: 80%;
+      }
+    }
+    .down-icon-position {
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+    }
+  }
+}
+
+.expandable-items {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+
+  .card-description {
+    color: #6d6d6d;
+  }
 }
