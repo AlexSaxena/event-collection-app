@@ -11,34 +11,35 @@ header {
     text-decoration: underline;
   }
 }
-.content-wrapper {
+.content-wrapper-landing-page {
   display: flex;
   flex-direction: row;
   height: 93%;
   width: 100%;
-}
-nav {
-  display: flex;
-  width: 20%;
-  height: 100%;
-
-  & ul {
+  nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 100%;
-    list-style-type: none;
-    border: solid black 1px;
+    width: 20%;
+    height: 100%;
 
-    li {
-      a {
-        color: black;
+    & ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 100%;
+      list-style-type: none;
+      border: solid black 1px;
+
+      li {
+        a {
+          color: black;
+        }
       }
     }
   }
 }
+
 main {
   height: 100%;
   width: 100%;
@@ -49,6 +50,15 @@ main {
     width: 100%;
     border: solid green 1px;
   }
-  .grid-container {
+  .grid-container-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    .grid-items {
+      border: solid red 1px;
+    }
   }
+}
+.landing-aside {
+  width: 20%;
 }

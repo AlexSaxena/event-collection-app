@@ -61,19 +61,18 @@ header h1 {
   text-decoration: underline;
 }
 
-.content-wrapper {
+.content-wrapper-landing-page {
   display: flex;
   flex-direction: row;
   height: 93%;
   width: 100%;
 }
-
-nav {
+.content-wrapper-landing-page nav {
   display: flex;
   width: 20%;
   height: 100%;
 }
-nav ul {
+.content-wrapper-landing-page nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +82,7 @@ nav ul {
   list-style-type: none;
   border: solid black 1px;
 }
-nav ul li a {
+.content-wrapper-landing-page nav ul li a {
   color: black;
 }
 
@@ -96,4 +95,16 @@ main .hero-banner {
   height: 30%;
   width: 100%;
   border: solid green 1px;
+}
+main .grid-container-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+main .grid-container-main .grid-items {
+  border: solid red 1px;
+}
+
+.landing-aside {
+  width: 20%;
 }/*# sourceMappingURL=main.css.map */
