@@ -105,19 +105,26 @@ main .main-content-landing {
 main .main-content-landing .hero-banner {
   border: solid purple 1px;
   flex-grow: 1;
-  min-height: 20rem;
+  min-height: 15rem;
 }
 main .main-content-landing .card-container {
   border: solid red 1px;
   flex-grow: 3;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
 }
-main .main-content-landing .card-container .grid-items {
-  border: solid black 1px;
+main .main-content-landing .card-container .grid-items-1 {
   margin: 1rem;
+  display: flex;
+}
+main .main-content-landing .card-container .grid-items-1 .test {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+main .main-content-landing .card-container .grid-items-2 {
+  margin: 1rem;
+  display: flex;
 }
 main .landing-aside {
   border: solid black 1px;

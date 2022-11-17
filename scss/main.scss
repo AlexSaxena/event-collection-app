@@ -57,19 +57,41 @@ main {
     .hero-banner {
       border: solid purple 1px;
       flex-grow: 1;
-      min-height: 20rem;
+      min-height: 15rem;
     }
     .card-container {
       border: solid red 1px;
       flex-grow: 3;
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      .grid-items {
-        border: solid black 1px;
+      display: flex;
+      flex-direction: column;
+      // display: grid;
+      // gap: 2rem;
+      // grid-template-columns: repeat(1, 1fr);
+      // grid-template-rows: repeat(2, 1fr);
+      .grid-items-1 {
+        // border: solid black 1px;
         // overflow: hidden;
         margin: 1rem;
+        // min-height: 1500px;
+        display: flex;
+        // .card-1{
+        //   max-height: fit-content;
+        //   // border: solid blue 1px;
+        // }
+        // .card-2{
+        //   max-height: fit-content;
+        //   // border: solid blue 1px;
+        // }
+        // .card-3{
+        //   max-height: fit-content;
+        // }
+        .test{
+          max-height: fit-content;
+        }
+      }
+      .grid-items-2{
+        margin: 1rem;
+        display: flex;
       }
     }
   }
